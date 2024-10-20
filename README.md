@@ -6,9 +6,14 @@ Dans ce dépôt vous trouverez l'architecture proposé pour mettre en place la s
 │   ├── data       
 │   │   ├── processed      <- The final, canonical data sets for modeling.
 │   │   └── raw            <- The original, immutable data dump.
-│   ├── metrics       
+│   │
+│   ├── notebooks          <- Jupyter notebooks.
+|   ├── metrics       
 │   ├── models      
-│   │   ├── data      
+│   │   ├── data           <- Scripts to download or generate data
+│   │   │   ├── check_structure.py
+│   │   │   ├── import_raw_data.py
+│   │   │   └── make_dataset.py
 │   │   └── models        
 │   ├── src       
 │   └── README.md.py       
