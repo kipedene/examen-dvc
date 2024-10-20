@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 import pandas as pd
 import numpy as np
-import os
-import click
-import logging
+import os, click, logging, json
 from pathlib import Path
 from sklearn.model_selection import train_test_split
 from check_structure import check_existing_file, check_existing_folder
@@ -50,6 +48,8 @@ def process_data(input_filepath_raw, output_folderpath):
         output_filepath = os.path.join(output_folderpath, f'{filename}.csv')
         if check_existing_file(output_filepath):
             file.to_csv(output_filepath, index=False)
+            with open('config.json', 'w') as f:
+                json.dump({'output_folderpath': output_folderpath}, f)
 
 if __name__ == '__main__':
     log_fmt = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
