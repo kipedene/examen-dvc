@@ -17,7 +17,8 @@ Dans ce dépôt vous trouverez l'architecture proposé pour mettre en place la s
 │   │   │   ├── check_structure.py
 │   │   │   ├── import_raw_data.py
 │   │   │   ├── make_dataset.py
-│   │   │   └── make_norm_dataset.py
+│   │   │   ├── make_norm_dataset.py
+│   │   │   └── start.sh
 │   │   └── models
 │   │       ├── predict.py      <- Scripts for make prediction.
 │   │       └── train_model.py  <- Scripts for train the model.
