@@ -1,0 +1,6 @@
+outs:
+- md5: 22be2c09f47e765219e53a82eb5ae956.dir
+  size: 10141
+  nfiles: 1
+  hash: md5
+  path: pred
