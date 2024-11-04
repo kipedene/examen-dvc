@@ -5,21 +5,25 @@ Dans ce dépôt vous trouverez l'architecture proposé pour mettre en place la s
 ├── examen_dvc          
 │   ├── data       
 │   │   ├── processed      <- The final, canonical data sets for modeling.
-│   │   └── raw            <- The original, immutable data dump.
+│   │   ├── raw            <- The original, immutable data dump.
+│   │   └── pred           <- The dataset of model predictions.
 │   │
-│   ├── metrics
-│   ├── models        
+│   ├── metrics            <- The metrics saved in json file.
+│   ├── models             <- The model and best params in .pkl.
 │   ├── notebooks          <- Jupyter notebooks.
 │   │
 │   ├── src 
-│   │   ├── data           <- Scripts to download or generate data
+│   │   ├── data           <- Scripts to download or generate data.
 │   │   │   ├── check_structure.py
 │   │   │   ├── import_raw_data.py
 │   │   │   ├── make_dataset.py
 │   │   │   └── make_norm_dataset.py
 │   │   └── models
-│   ├── config.json           
-│   └── README.md.py       
+│   │       ├── predict.py      <- Scripts for make prediction.
+│   │       └── train_model.py  <- Scripts for train the model.
+│   ├── README.md
+│   ├── config.json             
+│   └── requirements.txt       
 ```
 N'hésitez pas à rajouter les dossiers ou les fichiers qui vous semblent pertinents.
 
